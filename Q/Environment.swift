@@ -16,7 +16,7 @@ class Environment
     // state transition function
     var delta:Array2D<Int>
     // reward function
-    var r:Array2D<Int>
+    var r:Array2D<Float>
     
     init(states:Int, actions:Int)
     {
@@ -24,7 +24,27 @@ class Environment
         self.actions = actions
         
         self.delta = Array2D<Int>(rows:states, cols:actions, filler:0)
-        self.r = Array2D<Int>(rows:states, cols:actions, filler:0)
+        self.r = Array2D<Float>(rows:states, cols:actions, filler:0)
+    }
+    
+    func allStates() -> [Int]
+    {
+        var allStates = [Int]()
+        for index in 0..<states
+        {
+            allStates.append(index)
+        }
+        return allStates
+    }
+    
+    func allActions() -> [Int]
+    {
+        var allActions = [Int]()
+        for index in 0..<actions
+        {
+            allActions.append(index)
+        }
+        return allActions
     }
     
     func randomState() -> Int
@@ -42,7 +62,7 @@ class Environment
         return delta[state,action]
     }
     
-    func reward(state:Int, action:Int) -> Int
+    func reward(state:Int, action:Int) -> Float
     {
         return r[state,action]
     }
