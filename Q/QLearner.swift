@@ -14,6 +14,7 @@ class QLearner
     var currentState:Int
     var env:Environment
     var discountFactor:Float
+    var learningRate:Float
     
     init(environment:Environment)
     {
@@ -21,11 +22,16 @@ class QLearner
         self.q = Array2D<Float>(rows:environment.states, cols:environment.actions, filler:Float(0.0))
         self.currentState = 0
         self.discountFactor = Float(0.0)
+        self.learningRate = Float(1.0)
     }
     
     func newIteration()
     {
         currentState = env.randomState()
+    }
+    
+    func proceed()
+    {
         let currentAction = env.randomAction()
         
         // Select action and observe reward, state
@@ -33,6 +39,11 @@ class QLearner
         let nextState = env.transition(currentState, action:currentAction)
         
         // Update our q function
+        
+        // With learning rate
+//        q[currentState,currentAction] = q[currentState,currentAction] +  learningRate*(Float(reward) + discountFactor*maximalValueForActionsOfState(env.allActions(), state:nextState))
+        
+        // Without learning rate
         q[currentState,currentAction] = Float(reward) + discountFactor*maximalValueForActionsOfState(env.allActions(), state:nextState)
     }
     
