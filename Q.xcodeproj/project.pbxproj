@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2A652ADC1AD6FCC000D25015 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652ADB1AD6FCC000D25015 /* main.swift */; };
-		2A652AE31AD6FE0100D25015 /* Q.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AE21AD6FE0100D25015 /* Q.swift */; };
+		2A652AE31AD6FE0100D25015 /* QLearner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AE21AD6FE0100D25015 /* QLearner.swift */; };
 		2A652AE61AD6FE9400D25015 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AE51AD6FE9400D25015 /* Array2D.swift */; };
 		2A652AE91AD6FEB200D25015 /* RandomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AE81AD6FEB200D25015 /* RandomExtensions.swift */; };
 		2A652AEB1AD6FEC300D25015 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AEA1AD6FEC300D25015 /* Stopwatch.swift */; };
 		2A652AF31AD6FED900D25015 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AF21AD6FED900D25015 /* StringExtensions.swift */; };
+		2A652AF51AD7009C00D25015 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AF41AD7009C00D25015 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,11 +31,12 @@
 /* Begin PBXFileReference section */
 		2A652AD81AD6FCC000D25015 /* Q */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Q; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A652ADB1AD6FCC000D25015 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		2A652AE21AD6FE0100D25015 /* Q.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q.swift; sourceTree = "<group>"; };
+		2A652AE21AD6FE0100D25015 /* QLearner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLearner.swift; sourceTree = "<group>"; };
 		2A652AE51AD6FE9400D25015 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		2A652AE81AD6FEB200D25015 /* RandomExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomExtensions.swift; sourceTree = "<group>"; };
 		2A652AEA1AD6FEC300D25015 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		2A652AF21AD6FED900D25015 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		2A652AF41AD7009C00D25015 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				2A652ADB1AD6FCC000D25015 /* main.swift */,
-				2A652AE21AD6FE0100D25015 /* Q.swift */,
+				2A652AF61AD7044A00D25015 /* Q-Learning */,
 				2A652AE71AD6FEA700D25015 /* Extensions */,
 				2A652AE41AD6FE8900D25015 /* Structures */,
 			);
@@ -91,6 +93,15 @@
 				2A652AF21AD6FED900D25015 /* StringExtensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2A652AF61AD7044A00D25015 /* Q-Learning */ = {
+			isa = PBXGroup;
+			children = (
+				2A652AE21AD6FE0100D25015 /* QLearner.swift */,
+				2A652AF41AD7009C00D25015 /* Environment.swift */,
+			);
+			name = "Q-Learning";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +163,10 @@
 				2A652AF31AD6FED900D25015 /* StringExtensions.swift in Sources */,
 				2A652ADC1AD6FCC000D25015 /* main.swift in Sources */,
 				2A652AE61AD6FE9400D25015 /* Array2D.swift in Sources */,
+				2A652AF51AD7009C00D25015 /* Environment.swift in Sources */,
 				2A652AEB1AD6FEC300D25015 /* Stopwatch.swift in Sources */,
 				2A652AE91AD6FEB200D25015 /* RandomExtensions.swift in Sources */,
-				2A652AE31AD6FE0100D25015 /* Q.swift in Sources */,
+				2A652AE31AD6FE0100D25015 /* QLearner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
