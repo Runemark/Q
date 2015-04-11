@@ -8,5 +8,4 @@
 
 import Foundation
 
-println("Hello, World!")
-
+var env = SimpleEnvironment(width:10, height:10, goalX:0, goalY:0)

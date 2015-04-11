@@ -14,6 +14,17 @@
 		2A652AEB1AD6FEC300D25015 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AEA1AD6FEC300D25015 /* Stopwatch.swift */; };
 		2A652AF31AD6FED900D25015 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AF21AD6FED900D25015 /* StringExtensions.swift */; };
 		2A652AF51AD7009C00D25015 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AF41AD7009C00D25015 /* Environment.swift */; };
+		2A710C801AD8C5E000C2C082 /* QTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A710C7F1AD8C5E000C2C082 /* QTests.swift */; };
+		2A710C841AD8CC6000C2C082 /* TileMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD099B01AD82F3600D7F283 /* TileMap.swift */; };
+		2A710C851AD8CC6500C2C082 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AE51AD6FE9400D25015 /* Array2D.swift */; };
+		2A710C861AD8CC6900C2C082 /* RandomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AE81AD6FEB200D25015 /* RandomExtensions.swift */; };
+		2A710C871AD8CC6900C2C082 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AEA1AD6FEC300D25015 /* Stopwatch.swift */; };
+		2A710C881AD8CC6900C2C082 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AF21AD6FED900D25015 /* StringExtensions.swift */; };
+		2A710C891AD8CC6C00C2C082 /* QLearner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AE21AD6FE0100D25015 /* QLearner.swift */; };
+		2A710C8A1AD8CC6C00C2C082 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A652AF41AD7009C00D25015 /* Environment.swift */; };
+		2A710C8B1AD8CC6C00C2C082 /* SimpleEnviornment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD099AA1AD8260900D7F283 /* SimpleEnviornment.swift */; };
+		2AD099AB1AD8260900D7F283 /* SimpleEnviornment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD099AA1AD8260900D7F283 /* SimpleEnviornment.swift */; };
+		2AD099B11AD82F3600D7F283 /* TileMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD099B01AD82F3600D7F283 /* TileMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,10 +48,22 @@
 		2A652AEA1AD6FEC300D25015 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		2A652AF21AD6FED900D25015 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		2A652AF41AD7009C00D25015 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		2A710C7B1AD8C5E000C2C082 /* QTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A710C7E1AD8C5E000C2C082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A710C7F1AD8C5E000C2C082 /* QTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QTests.swift; sourceTree = "<group>"; };
+		2AD099AA1AD8260900D7F283 /* SimpleEnviornment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleEnviornment.swift; sourceTree = "<group>"; };
+		2AD099B01AD82F3600D7F283 /* TileMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2A652AD51AD6FCC000D25015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A710C781AD8C5E000C2C082 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				2A652ADA1AD6FCC000D25015 /* Q */,
+				2A710C7C1AD8C5E000C2C082 /* QTests */,
 				2A652AD91AD6FCC000D25015 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				2A652AD81AD6FCC000D25015 /* Q */,
+				2A710C7B1AD8C5E000C2C082 /* QTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				2A652AE51AD6FE9400D25015 /* Array2D.swift */,
+				2AD099B01AD82F3600D7F283 /* TileMap.swift */,
 			);
 			name = Structures;
 			sourceTree = "<group>";
@@ -100,8 +126,26 @@
 			children = (
 				2A652AE21AD6FE0100D25015 /* QLearner.swift */,
 				2A652AF41AD7009C00D25015 /* Environment.swift */,
+				2AD099AA1AD8260900D7F283 /* SimpleEnviornment.swift */,
 			);
 			name = "Q-Learning";
+			sourceTree = "<group>";
+		};
+		2A710C7C1AD8C5E000C2C082 /* QTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A710C7F1AD8C5E000C2C082 /* QTests.swift */,
+				2A710C7D1AD8C5E000C2C082 /* Supporting Files */,
+			);
+			path = QTests;
+			sourceTree = "<group>";
+		};
+		2A710C7D1AD8C5E000C2C082 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A710C7E1AD8C5E000C2C082 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +168,23 @@
 			productReference = 2A652AD81AD6FCC000D25015 /* Q */;
 			productType = "com.apple.product-type.tool";
 		};
+		2A710C7A1AD8C5E000C2C082 /* QTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A710C831AD8C5E000C2C082 /* Build configuration list for PBXNativeTarget "QTests" */;
+			buildPhases = (
+				2A710C771AD8C5E000C2C082 /* Sources */,
+				2A710C781AD8C5E000C2C082 /* Frameworks */,
+				2A710C791AD8C5E000C2C082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QTests;
+			productName = QTests;
+			productReference = 2A710C7B1AD8C5E000C2C082 /* QTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -134,6 +195,9 @@
 				ORGANIZATIONNAME = Runemark;
 				TargetAttributes = {
 					2A652AD71AD6FCC000D25015 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2A710C7A1AD8C5E000C2C082 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -151,9 +215,20 @@
 			projectRoot = "";
 			targets = (
 				2A652AD71AD6FCC000D25015 /* Q */,
+				2A710C7A1AD8C5E000C2C082 /* QTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A710C791AD8C5E000C2C082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A652AD41AD6FCC000D25015 /* Sources */ = {
@@ -167,6 +242,24 @@
 				2A652AEB1AD6FEC300D25015 /* Stopwatch.swift in Sources */,
 				2A652AE91AD6FEB200D25015 /* RandomExtensions.swift in Sources */,
 				2A652AE31AD6FE0100D25015 /* QLearner.swift in Sources */,
+				2AD099B11AD82F3600D7F283 /* TileMap.swift in Sources */,
+				2AD099AB1AD8260900D7F283 /* SimpleEnviornment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A710C771AD8C5E000C2C082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A710C881AD8CC6900C2C082 /* StringExtensions.swift in Sources */,
+				2A710C8A1AD8CC6C00C2C082 /* Environment.swift in Sources */,
+				2A710C841AD8CC6000C2C082 /* TileMap.swift in Sources */,
+				2A710C851AD8CC6500C2C082 /* Array2D.swift in Sources */,
+				2A710C871AD8CC6900C2C082 /* Stopwatch.swift in Sources */,
+				2A710C861AD8CC6900C2C082 /* RandomExtensions.swift in Sources */,
+				2A710C891AD8CC6C00C2C082 /* QLearner.swift in Sources */,
+				2A710C801AD8C5E000C2C082 /* QTests.swift in Sources */,
+				2A710C8B1AD8CC6C00C2C082 /* SimpleEnviornment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +355,38 @@
 			};
 			name = Release;
 		};
+		2A710C811AD8C5E000C2C082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A710C821AD8C5E000C2C082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -282,6 +407,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2A710C831AD8C5E000C2C082 /* Build configuration list for PBXNativeTarget "QTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A710C811AD8C5E000C2C082 /* Debug */,
+				2A710C821AD8C5E000C2C082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

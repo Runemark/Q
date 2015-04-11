@@ -19,52 +19,63 @@ class QLearner
     init(environment:Environment)
     {
         self.env = environment
-        self.q = Array2D<Float>(rows:environment.states, cols:environment.actions, filler:Float(0.0))
+        self.q = Array2D<Float>(rows:environment.states, cols:environment.actionCount, filler:Float(0.0))
         self.currentState = 0
-        self.discountFactor = Float(0.0)
+        self.discountFactor = Float(0.5)
         self.learningRate = Float(1.0)
     }
     
-    func newIteration()
-    {
-        currentState = env.randomState()
-    }
+//    func startNewIteration()
+//    {
+//        currentState = env.randomState()
+//        
+//        var goalStateReached = false
+//        while(!goalStateReached)
+//        {
+//            goalStateReached = proceed()
+//        }
+//    }
     
-    func proceed()
-    {
-        let currentAction = env.randomAction()
-        
-        // Select action and observe reward, state
-        let reward = env.reward(currentState, action:currentAction)
-        let nextState = env.transition(currentState, action:currentAction)
-        
-        // Update our q function
-        
-        // With learning rate
-//        q[currentState,currentAction] = q[currentState,currentAction] +  learningRate*(Float(reward) + discountFactor*maximalValueForActionsOfState(env.allActions(), state:nextState))
-        
-        // Without learning rate
-        q[currentState,currentAction] = Float(reward) + discountFactor*maximalValueForActionsOfState(env.allActions(), state:nextState)
-    }
+    // Returns true if goal state was found, false otherwise
+//    func proceed() -> Bool
+//    {
+////        let currentAction = env.randomAction(currentState)
+//        
+//        // Select action and observe reward, state
+////        let reward = env.reward(currentState, action:currentAction)
+////        let nextState = env.transition(currentState, action:currentAction)
+//        
+//        // Update our q function
+//        
+//        // With learning rate
+////        q[currentState,currentAction] = q[currentState,currentAction] +  learningRate*(Float(reward) + discountFactor*maximalValueForActionsOfState(env.allActions(nextState), state:nextState))
+//        
+//        // Without learning rate
+////        q[currentState,currentAction] = Float(reward) + discountFactor*maximalValueForActionsOfState(env.allActions(nextState), state:nextState)
+//        
+////        currentState = nextState
+//        
+//        return (nextState == env.goalState) ? true : false
+//    }
     
-    func qVal(state:Int, action:Int) -> Float
-    {
-        return q[state,action]
-    }
+//    func qVal(state:Int, action:Int) -> Float
+//    {
+//        return q[state,action]
+//    }
     
-    func maximalValueForActionsOfState(actions:[Int], state:Int) -> Float
-    {
-        var bestValue = Float(-100000)
-        
-        for action in actions
-        {
-            let value = q[state, action]
-            if (value > bestValue)
-            {
-                bestValue = value
-            }
-        }
-        
-        return bestValue
-    }
+//    func maximalValueForActionsOfState(actions:[Int], state:Int) -> Float
+//    {
+//        var bestValue = Float(-100000)
+//        
+//        for action in actions
+//        {
+//            let value = q[state, action]
+//            if (value > bestValue)
+//            {
+//                bestValue = value
+//            }
+//        }
+//        
+//        return bestValue
+//    }
 }

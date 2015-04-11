@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>QTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2A652AD71AD6FCC000D25015</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2A710C7A1AD8C5E000C2C082</key>
 		<dict>
 			<key>primary</key>
 			<true/>

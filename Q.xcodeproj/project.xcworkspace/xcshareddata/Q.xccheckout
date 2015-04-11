@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0289B198-CE81-48D3-B9F5-D7F1F27587A2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Q</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C0D694C42C66B1E262CCF68D0F7B4E97D2D263F0</key>
 		<string>https://github.com/Runemark/Q.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Q.xcodeproj</string>
+	<string>Q.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C0D694C42C66B1E262CCF68D0F7B4E97D2D263F0</key>
